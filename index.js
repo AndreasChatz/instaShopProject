@@ -43,7 +43,7 @@ if (!process.env.TESTING) {
   const port = process.env.SERVER_PORT || 1337;
   const httpServer = http.createServer(app);
   httpServer.listen(port, function () {
-    console.log('parse-server-example running on port ' + port + '.');
+    console.log(`Parse server is running on port ${port}.`);
   });
   // This will enable the Live Query real-time server
   await ParseServer.createLiveQueryServer(httpServer);
