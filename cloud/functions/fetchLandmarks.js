@@ -1,4 +1,5 @@
 import Landmark, { Field } from '../Landmark/index.js';
+
 const fetchLandmarks = async req => {
   const { objectId } = req.params;
 
