@@ -21,7 +21,7 @@ const saveLandmark = async req => {
   const data = JSON.parse(jsonData);
 
   Object.entries(data).forEach(([key, value]) => {
-    if (value && Object.prototype.hasOwnProperty.call(Field, key)) {
+    if (Object.prototype.hasOwnProperty.call(Field, key)) {
       landmark.set(key, value);
     }
   });
