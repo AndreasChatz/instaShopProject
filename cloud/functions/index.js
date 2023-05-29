@@ -1,3 +1,7 @@
+import login from './login.js';
+
+Parse.Cloud.define('login', login);
+
 Parse.Cloud.define('hello', req => {
   req.log.info(req);
   return 'Hi';
