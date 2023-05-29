@@ -1,5 +1,7 @@
+import fetchLandmarks from './fetchLandmarks.js';
 import login from './login.js';
 
+Parse.Cloud.define('fetchLandmarks', fetchLandmarks);
 Parse.Cloud.define('login', login);
 
 Parse.Cloud.define('hello', req => {
