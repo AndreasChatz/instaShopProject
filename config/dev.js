@@ -13,6 +13,7 @@ export default {
     liveQuery: {
       classNames: ['Posts', 'Comments'], // List of classes to support for query subscriptions
     },
+    accountLockout: { duration: 15, threshold: 5 },
   },
   DASHBOARD: {
     apps: [
