@@ -26,7 +26,9 @@ const saveLandmark = async req => {
     }
   });
 
-  return await landmark.save(null, { sessionToken });
+  return await landmark.save(null, { sessionToken }).catch(() => {
+    // NoOp
+  });
 };
 
 export default saveLandmark;
