@@ -22,7 +22,7 @@ const saveLandmark = async req => {
 
   Object.entries(data).forEach(([key, value]) => {
     if (Object.prototype.hasOwnProperty.call(Field, key)) {
-      landmark.set(key, value);
+      landmark.set(Field[key], value);
     }
   });
 
